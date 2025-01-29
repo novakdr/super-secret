@@ -28,7 +28,7 @@
   --color-accent-3: var(--evil-eye-blue);
 
   /* TYPOGRAPHY */
-  --font-decorative: Jaapokki, sans-serif;
+  --font-header: Jaapokki, sans-serif;
   --font-base: Inconsolata, monospace;
 
   /* TYPE SCALE */
@@ -69,6 +69,10 @@
   --space-2xl: clamp(4.5rem, 4.3261rem + 0.8696vw, 5rem);
   /* Space 3xl: 108px → 120px */
   --space-3xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+
+  /* EXTRA STUFF */
+  --border-dark: 2px dashed var(--color-dark);
+  --border-light: 2px dashed var(--color-light);
 }
 
 @media (prefers-color-scheme: dark) {

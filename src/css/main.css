@@ -7,11 +7,13 @@ html {
 
 body {
   background-color: var(--color-light);
-  font-family: var(--font-base);
   color: var(--color-dark);
+  font-family: var(--font-base);
+  font-size: var(--step-0);
 }
 
 h1, .h1, h2, .h2, h3, .h3., h4, .h4, h5, .h5 {
+  font-family: var(--font-header);
   line-height: 80%;
 }
 
@@ -39,24 +41,87 @@ p, .p {
   font-size: var(--step-0);
 }
 
-.huge {
-  font-size: var(--step-6);
+.navigation {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-block: 2rem;
+
+  & > a {
+    font-size: var(--step-1);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & >   svg > path:nth-child(2) {
+    fill: var(--color-dark);
+  }
 }
 
-.container {
-  --gap: var(--space-l);
+footer {
+  background-color: var(--color-dark);
+  border-top: var(--border-light);
+  color: var(--color-light);
+  display: grid;
+  padding-block-end: 4.5rem;
+}
 
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  padding-block: 10rem;
+.footer-header {
+  background-image: url('/images/footer/contact-dark.svg');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  height: clamp(4rem, 6rem + 1.5vw, 15rem);
+
+  @media (prefers-color-scheme: dark) {
+    background-image: url('/images/footer/contact-light.svg');
+  }
+}
+
+/* LAYOUT  */
+.container {
+  --gap: 0rem;
+
+  display: grid;
   gap: var(--gap);
   height: 100vh;
   overflow: hidden;
+  place-items: center;
 }
 
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  & > * {
+    margin-block: 0;
+  }
+
+  & > * + * {
+    margin-block-start: var(--space, 1.5rem);
+  }
+}
+
+.center {
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-inline-size: var(--measure, 80ch);
+  padding-inline: var(--space-s);
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space, 1rem);
+}
+
+/* TEXT DISPLAY */
 .decorative-text, .decorative-outline {
-  font-family: var(--font-decorative);
+  font-family: var(--font-header);
   text-transform: uppercase;
 }
 
@@ -66,6 +131,33 @@ p, .p {
 }
 
 /* UTILITIES */
-.no-white-space {
-  white-space: nowrap;
+.link, .big-link {
+  text-decoration: underline;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+  text-decoration-style: dashed;
+  transition: 500ms background-color, color;
+  padding-inline: 0.15rem;
+
+  &:after {
+    content: "\2197";
+    padding-block: 0.25rem;
+    padding-inline: 0.15rem;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+  }
+}
+
+.big-link {
+  font-size: var(--step-1);
+  text-underline-offset: 0.45rem;
+  padding-inline: 0.5rem;
+
+  &:after {
+    padding-inline: 0.22rem;
+  }
 }

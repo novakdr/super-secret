@@ -1,0 +1,14 @@
+---
+import Home from '../components/Home.astro';
+import Layout from '../layouts/Layout.astro';
+import PageHeading from '../components/PageHeading.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+	<PageHeading imageLight="/images/work/work-heading-light.svg" imageDark="/images/work/work-heading-dark.svg" />
+	<Navigation eyeColor="var(--color-accent-2)" />
+	<Home />
+	<Footer />
+</Layout>
