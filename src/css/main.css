@@ -53,11 +53,18 @@ p, .p {
 
     &:hover {
       text-decoration: underline;
+      text-underline-offset: 0.35rem;
     }
   }
 
-  & >   svg > path:nth-child(2) {
+  & svg > path:nth-child(2) {
     fill: var(--color-dark);
+  }
+
+  @media (max-width: 450px) {
+    & > svg {
+      display: none;
+    }
   }
 }
 
@@ -66,7 +73,7 @@ footer {
   border-top: var(--border-light);
   color: var(--color-light);
   display: grid;
-  padding-block-end: 4.5rem;
+  padding-block-end: var(--space-2xl);
 }
 
 .footer-header {
@@ -74,7 +81,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat; 
   background-size: cover;
-  height: clamp(4rem, 6rem + 1.5vw, 15rem);
+  height: clamp(3rem, 4rem + 3.5vw, 12rem);
 
   @media (prefers-color-scheme: dark) {
     background-image: url('/images/footer/contact-light.svg');
@@ -119,31 +126,21 @@ footer {
   gap: var(--space, 1rem);
 }
 
-/* TEXT DISPLAY */
-.decorative-text, .decorative-outline {
-  font-family: var(--font-header);
-  text-transform: uppercase;
-}
-
-.decorative-outline {
-  color: var(--color-light);
-  text-shadow: -1.5px -1.5px 0 var(--color-dark), 1.5px -1.5px 0 var(--color-dark), -1.5px 1.5px 0 var(--color-dark), 1.5px 1.5px 0 var(--color-dark);
-}
-
-/* UTILITIES */
+/* TEXT STUFF */
 .link, .big-link {
+  --padding: 0.15rem;
+  --padding-block: 0.25rem;
+
   text-decoration: underline;
-  text-decoration: underline;
-  text-underline-offset: 0.25rem;
+  text-underline-offset: var(--padding-block);
   text-decoration-style: dashed;
   transition: 500ms background-color, color;
-  padding-inline: 0.15rem;
+  padding-inline: var(--padding);
 
   &:after {
     content: "\2197";
-    padding-block: 0.25rem;
-    padding-inline: 0.15rem;
-    text-decoration: none;
+    padding-block: var(--padding-block);
+    padding-inline: var(--padding);
   }
 
   &:hover {
@@ -161,3 +158,15 @@ footer {
     padding-inline: 0.22rem;
   }
 }
+
+.decorative-text, .decorative-outline {
+  font-family: var(--font-header);
+  text-transform: uppercase;
+}
+
+.decorative-outline {
+  color: var(--color-light);
+  text-shadow: -1.5px -1.5px 0 var(--color-dark), 1.5px -1.5px 0 var(--color-dark), -1.5px 1.5px 0 var(--color-dark), 1.5px 1.5px 0 var(--color-dark);
+}
+
+/* UTILITIES */
