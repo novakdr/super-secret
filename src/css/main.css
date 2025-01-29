@@ -81,7 +81,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat; 
   background-size: cover;
-  height: clamp(3rem, 4.5rem + 3.5vw, 15rem);
+  height: clamp(3rem, 4.5rem + 1.5vw, 9rem);
 
   @media (prefers-color-scheme: dark) {
     background-image: url('/images/footer/contact-light.svg');
