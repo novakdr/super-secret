@@ -7,12 +7,20 @@ const { imageDark } = Astro.props;
 
 <style define:vars={{imageLight: `url(${imageLight})`, imageDark: `url(${imageDark})`}}>
   .page-heading {
-    height: clamp(5rem, 13rem + 1vw, 16rem);
+    height: 7rem;
     background-image: var(--imageLight);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-bottom: var(--border-dark);
+
+    @media (min-width: 800px) {
+      height: 12rem;
+    }
+
+    @media (min-width: 1500px) {
+      height: 20rem;
+    }
 
     @media (prefers-color-scheme: dark) {
       background-image: var(--imageDark);
