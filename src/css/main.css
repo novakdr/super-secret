@@ -74,12 +74,12 @@ hr {
 .navigation {
   align-items: center;
   display: flex;
-  gap: 2rem;
+  gap: var(--space-s);
   justify-content: space-between;
   margin-block: var(--space-xl);
   margin-inline: auto;
   max-inline-size: 85ch;
-  padding-inline: var(--space-m);
+  padding-inline: var(--space-xs);
 
   & > a {
     font-size: var(--step-1);
