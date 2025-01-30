@@ -20,12 +20,14 @@
   --pacific-salmon-red: #FF6262;
   --my-large-staub-pan-yellow: #E6AA2B;
   --evil-eye-blue: #2D6CFF;
+  --a-special-shade-of-purple: #A772FF;
 
   --color-light: var(--coffee-stained-white-shirt);
   --color-dark: var(--a-soul-of-sorts);
   --color-accent-1: var(--my-large-staub-pan-yellow);
   --color-accent-2: var(--pacific-salmon-red);
   --color-accent-3: var(--evil-eye-blue);
+  --color-accent-4: var(--a-special-shade-of-purple);
 
   /* TYPOGRAPHY */
   --font-header: Jaapokki, sans-serif;
