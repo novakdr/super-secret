@@ -98,7 +98,7 @@ hr {
   margin-block-end: var(--margin-end);
   margin-inline: auto;
   max-inline-size: 84ch;
-  padding-inline: var(--space-xs);
+  padding-inline: var(--space-s);
 
   & > a {
     font-size: var(--step-1);
