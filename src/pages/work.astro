@@ -1,14 +1,18 @@
 ---
-import Home from '../components/Home.astro';
 import Layout from '../layouts/Layout.astro';
 import PageHeading from '../components/PageHeading.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import WorkSection from '../components/WorkSection.astro';
 ---
 
 <Layout>
 	<PageHeading imageLight="/images/work/work-heading-light.svg" imageDark="/images/work/work-heading-dark.svg" />
 	<Navigation eyeColor="var(--color-accent-2)" />
-	<Home />
+	<section class="center stack container">
+		<Header title="Work" subTitle="* Projects available upon request"/>
+		<WorkSection />
+	</section>
 	<Footer />
 </Layout>

@@ -41,12 +41,22 @@ p, .p {
   font-size: var(--step-0);
 }
 
+hr {
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-light);
+  opacity: 50%;
+}
+
 .navigation {
   align-items: center;
   display: flex;
   gap: 2rem;
-  justify-content: center;
-  margin-block: 2rem;
+  justify-content: space-between;
+  margin-block: 4rem;
+  margin-inline: auto;
+  max-inline-size: 85ch;
+  padding-inline: var(--space-s);
 
   & > a {
     font-size: var(--step-1);
@@ -98,13 +108,8 @@ footer {
 
 /* LAYOUT  */
 .container {
-  --gap: 0rem;
-
-  display: grid;
-  gap: var(--gap);
-  height: 100vh;
-  overflow: hidden;
-  place-items: center;
+  margin-block-end: 8rem;
+  max-inline-size: 80ch;
 }
 
 .stack {
@@ -138,12 +143,15 @@ footer {
 .link, .big-link {
   --padding: 0.15rem;
   --padding-block: 0.25rem;
+  --hover-bg-color: var(--color-light);
+  --hover-text-color: var(--color-dark);
 
   text-decoration: underline;
   text-underline-offset: var(--padding-block);
   text-decoration-style: dashed;
   transition: 500ms background-color, color;
   padding-inline: var(--padding);
+  max-inline-size: max-content;
 
   &:after {
     content: "\2197";
@@ -152,8 +160,8 @@ footer {
   }
 
   &:hover {
-    color: var(--color-dark);
-    background-color: var(--color-light);
+    color: var(--hover-text-color);
+    background-color: var(--hover-bg-color);
   }
 }
 
@@ -164,6 +172,17 @@ footer {
 
   &:after {
     padding-inline: 0.22rem;
+  }
+
+  &.disabled {
+    pointer: none;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+
+    &:after {
+      content: "\292C";
+      padding-inline: 0.22rem;
+    }
   }
 }
 
@@ -178,3 +197,13 @@ footer {
 }
 
 /* UTILITIES */
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  align-items: center;
+}
+
+.small-text {
+  font-size: var(--step--1);
+}
