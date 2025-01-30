@@ -9,9 +9,9 @@ import WorkSection from '../components/WorkSection.astro';
 
 <Layout pageTitle="Work | Dave Novak">
 	<PageHeading imageLight="/images/work/work-heading-light.svg" imageDark="/images/work/work-heading-dark.svg" />
-	<Navigation eyeColor="var(--color-accent-2)" />
+	<Navigation eyeColor="var(--color-accent-2)" addMarginEnd="--margin-end: var(--space-2xl);"/>
 	<section class="center stack container">
-		<Header title="Work" subTitle="* Project available upon request"/>
+		<Header title="Work" subTitle="* Project available upon request" hasLink="true" link="/images/pdf/DaveNovakResume.pdf" linkName="Resume"/>
 		<WorkSection />
 	</section>
 	<Footer />
