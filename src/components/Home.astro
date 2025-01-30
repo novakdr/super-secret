@@ -1,9 +1,11 @@
 ---
+import Navigation from "./Navigation.astro"
+import Footer from "./Footer.astro"
 ---
 
-<main class="container">
-  <a href="/home" class="h1 decorative-text">Dave Novak</a>
-  <a href="" class="h1 decorative-outline">About</a>
-  <a href="" class="h1 decorative-outline">Work</a>
-  <a href="" class="h1 decorative-outline">Menagerie</a>
-</main>
+<section class="splash">
+  <div class="nav-container">
+    <Navigation eyeColor="pink"/>
+  </div>
+</section>
+<Footer />
