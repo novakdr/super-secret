@@ -92,13 +92,10 @@ hr {
   
   align-items: center;
   display: flex;
-  gap: var(--space-l);
+  gap: var(--space-s);
   justify-content: space-between;
   margin-block-start: var(--space-l);
   margin-block-end: var(--margin-end);
-  margin-inline: auto;
-  max-inline-size: 84ch;
-  padding-inline: var(--space-s);
 
   & > a {
     font-size: var(--step-1);
@@ -158,7 +155,9 @@ footer {
 /* LAYOUT  */
 .container {
   margin-block-end: 8rem;
-  max-inline-size: 80ch;
+  max-inline-size: 85ch;
+  margin-inline: auto;
+  padding-inline: var(--space-s);
 }
 
 .stack {

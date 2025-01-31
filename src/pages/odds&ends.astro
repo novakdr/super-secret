@@ -8,9 +8,11 @@ import Header from '../components/Header.astro';
 
 <Layout pageTitle="Odds & Ends | Dave Novak">
 	<PageHeading imageLight="/images/odds&ends/odds-ends-heading-light.svg" imageDark="/images/odds&ends/odds-ends-heading-dark.svg" />
-	<Navigation eyeColor="var(--color-accent-3)" addMarginEnd="--margin-end: var(--space-2xl);" />
-	<section class="center stack container">
-		<Header title="Odds & Ends" subTitle="A place, a location, a digital waiting room for me to share the things I'm working on, the random stuff that finds me, or the odd written bit of thought."/>
+	<section class="container">
+		<Navigation eyeColor="var(--color-accent-3)" addMarginEnd="--margin-end: var(--space-2xl);" />
+		<article class="stack">
+			<Header title="Odds & Ends" subTitle="A place, a location, a digital waiting room for me to share the things I'm working on, the random stuff that finds me, or the odd written bit of thought."/>
+		</article>
 	</section>
 	<Footer />
 </Layout>
