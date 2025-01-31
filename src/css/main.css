@@ -42,6 +42,18 @@ p, .p {
   line-height: 1.8;
 }
 
+
+figcaption {
+  &:before {
+    content: "-";
+  }
+}
+
+img {
+  border: var(--border-dark);
+  padding: var(--space-2xs);
+}
+
 hr {
   height: 2px;
   width: 100%;
