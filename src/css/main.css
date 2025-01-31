@@ -47,6 +47,11 @@ hr {
   width: 100%;
   background-color: var(--color-light);
   opacity: 50%;
+
+  &.dashed {
+    background-color: transparent;
+    border-top: 1px dashed var(--color-dark);
+  }
 }
 
 .splash {
@@ -234,24 +239,24 @@ footer {
   }
 }
 
-.decorative-text, .decorative-outline {
-  font-family: var(--font-header);
-  text-transform: uppercase;
-}
-
-.decorative-outline {
-  color: var(--color-light);
-  text-shadow: -1.5px -1.5px 0 var(--color-dark), 1.5px -1.5px 0 var(--color-dark), -1.5px 1.5px 0 var(--color-dark), 1.5px 1.5px 0 var(--color-dark);
-}
-
 /* UTILITIES */
 .work-tags {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-xs);
   align-items: center;
+  padding-inline: 0.5rem;
+  opacity: 70%;
 }
 
 .small-text {
   font-size: var(--step--1);
 }
+
+/* .prose {
+  max-inline-size: 65ch;
+
+  & > p {
+    line-height: 2.1;
+  }
+} */

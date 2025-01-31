@@ -5,5 +5,5 @@ const { title, subTitle, link, linkName } =  Astro.props;
   <h1>{ title }</h1>
   { link && <a href={ link } class="link" style="--hover-bg-color: var(--color-dark);--hover-text-color: var(--color-light);">{linkName}</a> }
 </div>
-<p class="small-text">{subTitle}</p>
+  { subTitle && <p class="small-text">{subTitle}</p> }
 <hr/>
