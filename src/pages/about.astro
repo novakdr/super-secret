@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import PageHeading from '../components/PageHeading.astro';
 import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 ---
 
@@ -11,11 +10,11 @@ import Header from '../components/Header.astro';
   <section class="container">
     <Navigation eyeColor="var(--color-accent-1)" addMarginEnd="--margin-end: var(--space-2xl);"/>
     <article class="stack">
-      <Header title="About" subTitle="A history of sorts. A collection of events that I've been a part of over the years. My story so far."/>
+      <Header title="About" subTitle="A history of sorts. A collection of events that I've been a part of over the years. My story so far." link="#footer" linkName="Contact me"/>
       <div class="stack" style="margin-block-start:var(--space-l);">
         <h2 class="h3">Now</h2>
         <p>
-          Design engineer, digital product designer, and owner of too many hobbies.
+          Design engineer, product designer, and owner of too many hobbies.
         </p>
       </div>
       <hr class="dashed">
@@ -23,7 +22,7 @@ import Header from '../components/Header.astro';
         <h2 class="h3">Previously</h2>
         <span>
           <p>
-            Design engineer at <a href="https://thoughtbot.com" class="link">thoughtbot</a>
+            Designer & frontend developer at <a href="https://thoughtbot.com" class="link">thoughtbot</a>
           </p>
           <p class="small-text">
             2022 - 2025
@@ -33,28 +32,39 @@ import Header from '../components/Header.astro';
       <hr class="dashed">
       <div class="stack prose" style="margin-block-start:var(--space-l);">
         <h2 class="h3">The story so far</h2>
+        <slot />
         <p>
-          Where to start? Where does any (good) story start? The beginning? I don't know. Maybe... Let's not get too caught up in the small stuff and let's try to focus on the big things that make Dave, well, Dave.
+          Where to start? Where does any (good?) story start? The beginning? I don't know. Maybe... Let's not get too caught up in the small stuff and let's try to focus on the bigger things that make Dave, well, Dave.
         </p>
         <p style="font-size:var(--step-2);">
           Ahem... Here we go...
         </p>
         <p>
-          I'm Dave. Dave Novak to be exact. Surprise!
+          Hello! Bonjour! こんにちは! Hola! I'm Dave. Dave Novak to be exact.
         </p>
         <p>
-          I make digital things & I'm bit of an unintentional nomad...
+          I make digital things & I'm bit of an unintentional nomad.
         </p>
+        <p>
+          Here's a close approximation of what I look like as a human being -- coffee and all:
+        </p>
+        <figure class="stack" style="--space: var(--space-2xs)">
+          <img src="/images/dale-cooper-coffee.JPG" alt="Foreground has Special Agent Dale Cooper enjoying a hot cup of coffee with a big smile on his wife. The background is a floral pattern with pale violet and light blue flowers.">
+          <figcaption class="small-text">
+            Special Agent Dale Cooper enjoying a good cup of joe.
+          </figcaption>
+        </figure>
+        <p>Continuing...</p>
         <p>
           I grew up overseas in the teeny-tiny country of Belgium. I attended an international school during my formative years learning the ways and secrets of Belgium itself.</p>    
         <p>
           I'll let you in on a secret...
         </p>
-        <p>It's waffles!</p>
+        <p>It's waffles.</p>
         <p>
-          Mysteriously simple and ever-delicious. The best ones can be found scattered across town centers of southern Belgium. Follow the sweetly scented, cobbled streets of the city centers to find the faithful waffle keeper, the street vendor. Stand tall and softly say, "Une gaufre s'il te plait."
+          Yup. Mysteriously simple and ever-delicious. The best ones can be found scattered across the town centers of southern Belgium. Follow the sweetly scented, cobbled streets at the heart of the city and find the faithful waffle keeper, the street vendor. Stand with conviction and softly say, "Une gaufre s'il te plait."
         </p>
-        <p>Secret spilled. Don't tell anybody. Shhh!</p>
+        <p>Now you know. Don't tell anybody. Shhh!</p>
         <p>
           After my jaunt in the land of chocolate and waffles, I hopped on over the pond to study philosophy in the mountains of Colorado. I spent way too much time philosophizing about droids in Star Wars, questioning who actually comes out the other end of a Transporter, and discussing whether or not we inhabit a simulated universe. Maybe? Who am I to say? Probably...
         </p>
@@ -71,21 +81,31 @@ import Header from '../components/Header.astro';
           There I kept exploring what the huge world of design and development had to offer and how I could be a part of it in a positive way.
         </p>
         <p>
-          Fast forward a few years, newly minted as a designer and click-clacker, I ended up going through thoughtbot's apprenceship program as a Designer Who Codes. I made it. Woo! After a few months I became a full fledged Design Engineer. Even bigger woo! How cool is that? Pretty damn cool in my opinion.
+          Fast forward a few years, newly minted as a designer and tippity-typer, I ended up going through thoughtbot's apprenceship program as a Designer Who Codes. I made it. Woo! After a few months I became a full fledged Design Engineer. Even bigger woo! How cool is that? Pretty damn cool in my opinion.
         </p>
         <p>
-          While there I worked on a whole variety of things. I helped startups get their products to market -- from a seed of an idea to a deliverable piece of software. I've worked with large companies to design and update existing products within their catalogue. Most notably, I was a part of the Harvard Business Review mobile app re-launch. The Library view was my special little guy but I collaborated in the creation and implentation of a design system, UX research, and mobile development. Many duties, many hats.
+          During my time at thoughtbot I started off with small starts-up in various industries (finance, medical, immigration, education) bring their ideas to market. I owned the whole design process and even went so far as to implement my designs in code. How neat!
+        </p>
+        <p>
+          I also worked with some pretty big companies too. I helped both the Harvard Business Review and Culligan Quench update and relaunch their mobile apps. One being a magazine and the other being an inventory management app.
+        </p>
+        <p>
+          Most notably with Harvard Business Review I developed a UX research plan & tests, created a design system, and implemented the designs based on our feedback in collaboration with the in-house design team. My work of note on the project was taking ownership of the Library view -- design and implementation.
+        </p>
+        <p>
+          Wow.
+        </p>
         <p>
           You're probably wondering though, "What's the lowdown on Dave's skills and the tech he uses?"
         </p>
         <p>
-          Well, the hard skills includes mobile and web design & development (that's a real neat two-for-one), design systems, accessibility best practices, and the always-moving target of finding solutions for those hard to solution things. Plus, the soft skills that come with being on a prominent design & development agency.
+          Well, the hard skills includes mobile and web design & development (that's a real neat two-for-one), creating & maintaining design systems, accessibility best practices, and the always-moving target of finding solutions for those hard to solution things. Plus, the soft skills that come with being a part of a prominent design & development agency.
         </p>
         <p>
-          Now the tech I've worked with and like working with are React (Next & Remix), React Native, Ruby on Rails, Tailwind, and a whole host of UI frameworks. What a list! My forever love, though, will always be good ol' HTML & CSS. I've used all of those in production.
+          Now the tech I've worked with and like working with are React (Next & Remix), React Native, Ruby on Rails, Tailwind, and a whole host of UI frameworks. What a list! My most favoritest, though, will always be good ol' HTML & CSS.
         </p>
         <p>
-          When I'm not digitally hammering nails into digital wood to make digital boxes, you can find me hanging out with my wife & our kitty-cat (Stitch), losing most tabletop games to them (yes, even my cat), enjoying the meditation of perfecting my pourover technique, flicking & losing too flies fishing for trout, and answering various weather-related questions about my height or how my non-existent pro basketball career went.
+          When I'm not digitally hammering nails into digital wood to make digital boxes, you can find me hanging out with my wife & our kitty-cat (Stitch), losing most tabletop games to them (yes, even my cat), enjoying the meditation of perfecting my pourover technique, flicking & losing too many flies fishing for trout, and answering various weather-related questions about my height or how my non-existent pro basketball career went.
         </p>
         <p>
           Whew!
@@ -93,22 +113,12 @@ import Header from '../components/Header.astro';
         <p>
           Thanks for reading this far and learning a little (a lot) about me! I really do appreciate it.
         </p>
-        <p>
-          Don't be a stranger and reach out! You can find my contact info down below in the <a href="#footer" class="link">footer</a>
-        </p>
-        <p>
-          Have fun out there and catch ya'll around the interwebs!
-        </p>
-        <p>
-          P.S. Enjoy a picture of myself. Problem is I don't currently have one. Instead, enjoy a picture of Special Agent Dale Cooper. We look similar enough... -ish.
-        </p>
-        <figure class="stack" style="--space: var(--space-2xs);margin-block-start: var(--space-l);">
+        <figure class="stack" style="--space: var(--space-2xs)">
           <img src="/images/dale-cooper.png" alt="Special Agent Dale Cooper, from the TV show Twin Peaks, giving a thumbs up in a light brown trenchcoat. He has a disarmingly welcoming smile.">
           <figcaption class="small-text">
-            Special Agent Dale Cooper from Twin Peaks
+            Special Agent Dale Cooper from the TV show Twin Peaks
           </figcaption>
         </figure>
       </div>
   </section>
-  <Footer />
 </Layout>

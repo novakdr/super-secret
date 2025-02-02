@@ -2,8 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import PageHeading from '../components/PageHeading.astro';
 import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 ---
 
 <Layout pageTitle="Odds & Ends | Dave Novak">
@@ -12,7 +12,9 @@ import Header from '../components/Header.astro';
 		<Navigation eyeColor="var(--color-accent-3)" addMarginEnd="--margin-end: var(--space-2xl);" />
 		<article class="stack">
 			<Header title="Odds & Ends" subTitle="A place, a location, a digital waiting room for me to share the things I'm working on, the random stuff that finds me, or the odd written bit of thought."/>
+			<ul>
+				{allPosts.map((post: any) => <li><a href={post.url} class="big-link">{post.frontmatter.title}</a></li>)}
+			</ul>
 		</article>
 	</section>
-	<Footer />
 </Layout>
