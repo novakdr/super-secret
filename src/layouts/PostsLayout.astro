@@ -12,7 +12,7 @@ import Navigation from "../components/Navigation.astro";
     <Navigation eyeColor="var(--color-accent-3)" addMarginEnd="--margin-end: var(--space-2xl);"/>
     <article class="stack" style="--space: var(--space-l);">
       <h1>{frontmatter.title}</h1>
-      <div class="cluster" style="--space: var(--space-l);">
+      <div class="blog-info">
         <p class="small-text">Published on: {frontmatter.pubDate}</p>
         <p class="small-text">Listening to: <a href={frontmatter.listeningTo.url} class="link" style="--hover-bg-color: var(--color-dark);--hover-text-color: var(--color-light);">{frontmatter.listeningTo.title}</a></p>
       </div>
