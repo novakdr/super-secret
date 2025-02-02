@@ -49,11 +49,14 @@ p, .p {
 
 figure {
   padding-block: var(--space-m);
+  display: grid;
+  place-items: center;
+  gap: var(--space-xs);
 }
 
 figcaption {
   &:before, &:after {
-    content: "+";
+    content: "*";
   }
 }
 
