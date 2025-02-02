@@ -10,11 +10,18 @@ import Header from '../components/Header.astro';
   <section class="container">
     <Navigation eyeColor="var(--color-accent-1)" addMarginEnd="--margin-end: var(--space-2xl);"/>
     <article class="stack">
-      <Header title="About" subTitle="A history of sorts. A collection of events that I've been a part of over the years. My story so far." link="#footer" linkName="Contact me"/>
-      <div class="stack" style="margin-block-start:var(--space-l);">
+      <Header title="About" subTitle="A history of sorts. A collection of events that I've been a part of over the years. My story so far." />
+      <div class="stack">
         <h2 class="h3">Now</h2>
         <p>
           Product designer, UX engineer, and owner of too many hobbies.
+        </p>
+      </div>
+      <hr class="dashed">
+      <div class="stack" style="margin-block-start:var(--space-l);">
+        <h2 class="h3">Notable Clients</h2>
+        <p>
+          Harvard Business Review & Culligan Quench
         </p>
       </div>
       <hr class="dashed">
@@ -30,7 +37,7 @@ import Header from '../components/Header.astro';
         </span>
       </div>
       <hr class="dashed">
-      <div class="stack prose" style="margin-block-start:var(--space-l);">
+      <div class="stack" style="margin-block-start:var(--space-l);">
         <h2 class="h3">The story so far</h2>
         <slot />
         <p>
@@ -51,7 +58,7 @@ import Header from '../components/Header.astro';
         <figure class="center">
           <img src="/images/dale-cooper-coffee.JPG" alt="Foreground has Special Agent Dale Cooper enjoying a hot cup of coffee with a big smile on his wife. The background is a floral pattern with pale violet and light blue flowers.">
           <figcaption class="small-text">
-            Dale Cooper enjoying a good ol' cup of joe.
+            Cooper enjoying a good ol' cup of joe.
           </figcaption>
         </figure>
         <p>Continuing...</p>
