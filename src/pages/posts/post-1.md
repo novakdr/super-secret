@@ -8,18 +8,39 @@ listeningTo:
 tags: ["blog", "beginning", "out in the open", "first"]
 ---
 
-### You're here early
+### Well, you're here early
 
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
+Uhm... Well... It seems you've found the blog part of my site. A bit early too. How did you find this place? It doesn't even have a domain yet. Well, jeez. Since you're already here, enjoy some art I did a little while ago as a treat for being such early birdy-bird. You know what they say... it's bad for fishing:
 
-### What I've accomplished
+<figure class="center">
+    <img src="/images/art/hutchinson.JPG" alt="Foreground has Special Agent Dale Cooper enjoying a hot cup of coffee with a big smile on his wife. The background is a floral pattern with pale violet and light blue flowers.">
+    <figcaption class="small-text">
+    Scott Hutchison from Frightened Rabbit
+    </figcaption>
+</figure>
 
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
+<figure class="center">
+    <img src="/images/art/david-lynch.JPG" alt="Foreground has Special Agent Dale Cooper enjoying a hot cup of coffee with a big smile on his wife. The background is a floral pattern with pale violet and light blue flowers.">
+    <figcaption class="small-text">
+    David Lynch
+    </figcaption>
+</figure>
 
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
+<figure class="center">
+    <img src="/images/art/mulder.JPG" alt="Foreground has Special Agent Dale Cooper enjoying a hot cup of coffee with a big smile on his wife. The background is a floral pattern with pale violet and light blue flowers.">
+    <figcaption class="small-text">
+    Agent Mulder
+    </figcaption>
+</figure>
 
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
+Wasn't that kind of a fun break and nice to look at? I think so.
 
-### What's next
+### What's on the horizon?
 
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+It's not all just looking at pixels in these parts, though. What an adventrure that would be... I'll tilt the beans as a little bonus treat for somehow being this early. Freakish.
+
+Here's what to expect from this whole... thing, I guess. I'll keep it brief because I don't even know what the fuck is going on with this. 
+
+Anyway, soon-ish, I'm going to try real hard and yank these curtains back on this here site and explain some of the decisions that went into making it. Yeah... that feels right. This whole place is piping hot off the press -- how did you find this again? -- and all that jazz, so it feels appropriate to give it some explaining, some object permanence.
+
+Other than that, I think I just want to share some of my thoughts every once in a harvest moon. -- the usual human thing. Also, the strucutre of these posts will probably evolve over time too. Typical... I'm starting out pretty minimal and just sharing some of the music I'm listening to at the moment. Probably what I'm listening to while I'm writing this rotten things. What a deal! Maybe it'll stir something up in the reader as it did for me. Who knows. That would be nice, though...
