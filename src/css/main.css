@@ -123,7 +123,7 @@ hr {
   
   align-items: center;
   display: flex;
-  gap: var(--space-l);
+  gap: var(--space-m);
   justify-content: space-between;
   margin-block-start: var(--space-l);
   margin-block-end: var(--margin-end);
