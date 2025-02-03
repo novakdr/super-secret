@@ -122,6 +122,7 @@ hr {
 .nav-container {
   --shadow-size: var(--space-2xs);
 
+  position: relative;
   padding-block: var(--space-s);
   background-color: var(--color-light);
   border: var(--border-dark);
