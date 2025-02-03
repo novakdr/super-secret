@@ -69,6 +69,30 @@ img {
   padding: var(--space-2xs);
 }
 
+blockquote {
+  margin-inline: var(--space-l);
+  position: relative;
+  font-style: italic;
+
+  &:before {
+    content: open-quote;
+    font-size: 4rem;
+    font-style: normal;
+    position: absolute;
+    top: -1.5rem;
+    left: -3rem;
+  }
+
+  &:after {
+    content: close-quote;
+    font-size: 4rem;
+    font-style: normal;
+    position: absolute;
+    top: -1.5rem;
+    right: -3rem;
+  }
+}
+
 hr {
   height: 2px;
   width: 100%;
