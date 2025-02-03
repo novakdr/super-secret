@@ -26,13 +26,6 @@ Uhm... Well... It seems you've found the blog part of my site. A bit early too. 
     </figcaption>
 </figure>
 
-<figure class="center">
-    <img src="/images/art/mulder.JPG" alt="Foreground has Special Agent Dale Cooper enjoying a hot cup of coffee with a big smile on his wife. The background is a floral pattern with pale violet and light blue flowers.">
-    <figcaption class="small-text">
-    Agent Mulder
-    </figcaption>
-</figure>
-
 Wasn't that kind of a fun break and nice to look at? I think so.
 
 ### What's on the horizon?

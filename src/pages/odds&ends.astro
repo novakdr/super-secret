@@ -6,12 +6,12 @@ import Header from '../components/Header.astro';
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 ---
 
-<Layout pageTitle="Odds & Ends | Dave Novak">
+<Layout pageTitle="Odds & Ends | Dave Novak" hasFooter >
 	<PageHeading imageLight="/images/odds&ends/odds-ends-heading-light.svg" imageDark="/images/odds&ends/odds-ends-heading-dark.svg" />
 	<section class="container">
-		<Navigation eyeColor="var(--color-accent-3)" addMarginEnd="--margin-end: var(--space-2xl);" />
+		<Navigation eyeColor="var(--color-accent-3)" addMarginEnd="--margin-end: var(--space-2xl);" hasHome />
 		<article class="stack">
-			<Header title="Odds & Ends" subTitle="A place, a location, a digital waiting room for me to share the things I'm working on, the random stuff that finds me, or the odd written bit of thought."/>
+			<Header title="Odds & Ends" subTitle="A place, a location, a digital cupboard for me to store and share the things I'm working on, the random stuff that finds me, or the odd written bit of thought."/>
 			<ul>
 				{allPosts.map((post: any) => <li><a href={post.url} class="big-link">{post.frontmatter.title}</a></li>)}
 			</ul>

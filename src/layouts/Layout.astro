@@ -1,14 +1,15 @@
 ---
 import "../css/main.css";
 import Footer from "../components/Footer.astro";
-const { pageTitle } = Astro.props;
+const { pageTitle, hasFooter } = Astro.props;
+// const footer = hasFooter;
 ---
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon1.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 	</head>
@@ -16,6 +17,6 @@ const { pageTitle } = Astro.props;
 		<main>
 			<slot />
 		</main>
-		<Footer />
+		{ hasFooter && <Footer /> }
 	</body>
 </html>

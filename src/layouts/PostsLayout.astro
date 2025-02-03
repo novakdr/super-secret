@@ -1,19 +1,18 @@
 ---
-import "../css/main.css";
 import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
 import PageHeading from "../components/PageHeading.astro";
 import Navigation from "../components/Navigation.astro";
 ---
 
-<Layout pageTitle={frontmatter.title}>
+<Layout pageTitle={frontmatter.title} hasFooter={true}>
   <PageHeading imageLight="/images/odds&ends/odds-ends-heading-light.svg" imageDark="/images/odds&ends/odds-ends-heading-dark.svg" />
   <section class="container">
     <Navigation eyeColor="var(--color-accent-3)" addMarginEnd="--margin-end: var(--space-2xl);"/>
     <article class="stack" style="--space: var(--space-l);">
-      <h1>{frontmatter.title}</h1>
+      <h1 class="display">{frontmatter.title}</h1>
       <div class="blog-info">
-        <p class="small-text">Published on: {frontmatter.pubDate}</p>
+        <p class="small-text">Published on: <span class="underline">{frontmatter.pubDate}</span></p>
         <p class="small-text">Listening to: <a href={frontmatter.listeningTo.url} class="link" style="--hover-bg-color: var(--color-dark);--hover-text-color: var(--color-light);">{frontmatter.listeningTo.title}</a></p>
       </div>
       <hr>

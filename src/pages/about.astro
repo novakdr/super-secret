@@ -5,10 +5,10 @@ import Navigation from '../components/Navigation.astro';
 import Header from '../components/Header.astro';
 ---
 
-<Layout pageTitle="About | Dave Novak">
+<Layout pageTitle="About | Dave Novak" hasFooter >
   <PageHeading imageLight="/images/about/about-heading-light.svg" imageDark="/images/about/about-heading-dark.svg" />
   <section class="container">
-    <Navigation eyeColor="var(--color-accent-1)" addMarginEnd="--margin-end: var(--space-2xl);"/>
+    <Navigation eyeColor="var(--color-accent-1)" addMarginEnd="--margin-end: var(--space-2xl);" hasHome />
     <article class="stack">
       <Header title="About" subTitle="A history of sorts. A collection of events that I've been a part of over the years. My story so far." />
       <div class="stack">
@@ -19,7 +19,7 @@ import Header from '../components/Header.astro';
       </div>
       <hr class="dashed">
       <div class="stack" style="margin-block-start:var(--space-l);">
-        <h2 class="h3">Notable Clients</h2>
+        <h2 class="h3">Clients</h2>
         <p>
           Harvard Business Review & Culligan Quench
         </p>
