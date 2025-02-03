@@ -70,26 +70,30 @@ img {
 }
 
 blockquote {
-  margin-inline: var(--space-l);
-  position: relative;
   font-style: italic;
+  display: flex;
+  position: relative;
 
   &:before {
     content: open-quote;
-    font-size: 4rem;
+    font-size: 3em;
     font-style: normal;
     position: absolute;
-    top: -1.5rem;
-    left: -3rem;
+    top: calc(-1 * var(--space-s));
+    left: 0;
   }
 
   &:after {
     content: close-quote;
-    font-size: 4rem;
+    font-size: 3em;
     font-style: normal;
     position: absolute;
-    top: -1.5rem;
-    right: -3rem;
+    bottom: calc(-1 * var(--space-l));
+    right: 1rem;
+  }
+
+  & > p {
+    margin-inline: var(--space-xl);
   }
 }
 
