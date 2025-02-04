@@ -49,7 +49,7 @@ Soon-ish, I'm going to try real hard and yank these curtains back on this here s
 
 Other than that, I think I just want to share some of my thoughts every once in a harvest moon. -- the usual human thing, you know. 
 
-I almost forgot! The structure of these posts will probably evolve over time. Typical... I'm starting out pretty minimal and just sharing some of the music I'm listening to at the moment. I'm toying with the idea of how long these thoughts have been bouncing in the ol' noggin. Most likely and most probably I'll just start out with what I'm listening to while I'm writing these meanderings. What a deal, I know! Maybe it'll stir something up in the reader as it did for me. Who knows. That would be nice, though.
+I almost forgot! The structure of these posts will probably evolve over time. Typical... I'm starting out pretty minimal and just sharing some of the music I'm listening to at the moment. I'm toying with the idea of how long these thoughts have been bouncing in the ol' noggin. Most likely and most probably I'll just start out with what I'm listening to while I'm writing these meanderings. What a deal, I know! Maybe it'll stir something up in the reader as it did for me. Who knows. That would be nice.
 
 Maybe I'll even talk about this fella and its time in the web design sun:
 
