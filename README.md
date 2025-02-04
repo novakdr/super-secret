@@ -10,6 +10,8 @@ I guess this means that it's not no secret then.
 
 This is my little space on the web. It's my personal site. Maybe even a boilerplate of sorts. At least it can be for now until it inevitably gets replaced. How typical.
 
+Take a gander. Stare into [my liminal space](https://novakdr.com) if you dare. It's quite nice, maybe even relaxing, in my opinion.
+
 # That's all?
 
 Yup, pretty much. I mean, this is my little place where fun is to be had, experiments to be done, and to share whatever I stumbled upon.
