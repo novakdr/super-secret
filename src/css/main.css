@@ -76,7 +76,7 @@ blockquote {
   /* position: relative; */
   border: var(--border-dark);
   padding-block: var(--space-s);
-  padding-inline: var(--space-s);
+  padding-inline: var(--space-m);
 
   @media (min-width: 450px) {
     padding-block: var(--space-l);
