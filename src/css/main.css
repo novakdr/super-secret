@@ -83,6 +83,7 @@ blockquote {
     padding-inline: var(--space-xl);
   }
 
+  /* FOR QUOTES */
   /* &:before {
     content: open-quote;
     font-size: 4em;
