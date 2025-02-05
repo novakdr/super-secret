@@ -70,30 +70,53 @@ img {
 }
 
 blockquote {
-  font-style: italic;
   display: flex;
-  position: relative;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  /* position: relative; */
+  border: var(--border-dark);
+  padding-block: var(--space-s);
+  padding-inline: var(--space-s);
 
-  &:before {
+  @media (min-width: 450px) {
+    padding-block: var(--space-l);
+    padding-inline: var(--space-xl);
+  }
+
+  /* &:before {
     content: open-quote;
-    font-size: 3em;
-    font-style: normal;
+    font-size: 4em;
     position: absolute;
-    top: calc(-1 * var(--space-s));
+    top: calc(-1 * var(--space-m));
     left: 0;
-  }
+  } */
 
-  &:after {
+  /* &:after {
     content: close-quote;
-    font-size: 3em;
-    font-style: normal;
+    font-size: 4em;
     position: absolute;
-    bottom: calc(-1 * var(--space-l));
+    bottom: calc(-1 * var(--space-xl));
     right: 1rem;
-  }
+  } */
 
   & > p {
-    margin-inline: var(--space-xl);
+    /* margin-inline: var(--space-xl); */
+    font-style: italic;
+    font-size: var(--step-1);
+
+    & > cite {
+      font-size: var(--step--1);
+      line-height: 50%;
+    }
+  }
+
+}
+
+ul {
+  padding-inline: var(--space-2xs);
+
+  & > li {
+    list-style-type: "+";
   }
 }
 

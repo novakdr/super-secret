@@ -42,6 +42,8 @@ Anyway, here's what to expect from this whole... thing:
 To quoteth myself:
 
 > A place, a location, a digital cupboard for me to store and share the things I'm working on, the random stuff that finds me, or the odd written bit of thought.
+>
+> -- <cite>Me, Dave Novak (owner of this place)</cite>
 
 That's pretty straightforward, right? RIGHT?!
 
