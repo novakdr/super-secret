@@ -73,7 +73,7 @@ blockquote {
   display: flex;
   flex-direction: column;
   gap: var(--space-2xs);
-  /* position: relative; */
+  position: relative;
   border: var(--border-dark);
   padding-block: var(--space-s);
   padding-inline: var(--space-m);
@@ -86,10 +86,11 @@ blockquote {
   /* FOR QUOTES */
   /* &:before {
     content: open-quote;
-    font-size: 4em;
+    font-size: 10em;
     position: absolute;
-    top: calc(-1 * var(--space-m));
-    left: 0;
+    top: calc(-1 * var(--space-xl));
+    left: 1rem;
+    opacity: 20%;
   } */
 
   /* &:after {
@@ -282,6 +283,11 @@ footer {
 }
 
 /* TEXT STUFF */
+.big-text {
+  font-size: var(--step-2);
+  line-height: 150%;
+}
+
 .link, .big-link {
   --padding: 0.15rem;
   --padding-block: 0.25rem;
