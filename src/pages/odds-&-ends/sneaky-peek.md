@@ -18,14 +18,14 @@ Well, jeez, since you're already here, I think you deserve a sneak peek. You kno
 First, enjoy some art I did a little bit ago as an extra bonus. How nice!
 
 <figure class="center">
-    <img src="/images/art/hutchinson.JPG" alt="A portrait of Scott Hutchison from the band Frightened Rabbits. The material is watercolor and pencils.">
+    <img src="/images/art/hutchinson.JPG" alt="A portrait of Scott Hutchison from the band Frightened Rabbits. The material is watercolor and pencils." class="box">
     <figcaption class="small-text">
     Scott Hutchison - Watercolor
     </figcaption>
 </figure>
 
 <figure class="center">
-    <img src="/images/art/david-lynch.JPG" alt="A portrait of the writer, director, painter, transcendental meditation practitioner David Lynch. The material is watercolor and pencils.">
+    <img src="/images/art/david-lynch.JPG" alt="A portrait of the writer, director, painter, transcendental meditation practitioner David Lynch. The material is watercolor and pencils." class="box">
     <figcaption class="small-text">
     David Lynch - Watercolor
     </figcaption>
@@ -56,7 +56,7 @@ I almost forgot! The structure of these posts will probably evolve over time. Ty
 Maybe I'll even talk about this fella and its time in the web design sun:
 
 <figure class="center">
-    <img src="/images/art/vonnegut.png" alt="Kurt Vonnegut's drawing of a butthole.">
+    <img src="/images/art/vonnegut.png" alt="Kurt Vonnegut's drawing of a butthole." class="box">
     <figcaption class="small-text">
     Where to begin?
     </figcaption>
