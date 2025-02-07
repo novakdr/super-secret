@@ -58,12 +58,12 @@ figure {
   gap: var(--space-xs);
   
   & > figcaption {
+    text-align: center;
+
     &:before, &:after {
       content: "+";
     }
   }
-
-
 }
 
 
@@ -134,15 +134,22 @@ hr {
   }
 
   &.stack {
-    @media (max-width: 450px) {
-      justify-content: center;
+    justify-content: space-around;
+    gap: var(--space-xl);
+  }
+
+  & > .cluster {
+    --space: var(--space-l);
+
+    @media (min-width: 450px) {
+      --space: var(--space-m);
     }
   }
 }
 
 .home-links {
   display: grid;
-  gap: 1.5rem;
+  gap: var(--space-2xs);
   place-items: flex-start;
 
   @media (min-width: 450px) {
