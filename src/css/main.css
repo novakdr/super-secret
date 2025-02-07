@@ -353,5 +353,5 @@ footer {
 
 .box {
   border: var(--border-dark);
-  padding: var(--space-s);
+  padding: var(--space-xs);
 }
