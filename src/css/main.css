@@ -137,6 +137,7 @@ hr {
 
   @media (max-width: 450px) {
     height: 100%;
+    padding-inline: var(--space-l);
   }
 
   &.stack {
@@ -262,7 +263,11 @@ footer {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
-  gap: var(--space-xs);
+  gap: var(--space-s);
+
+  @media (max-width: 450px) {
+    gap: var(--space-m);
+  }
 }
 
 .blog-info {
