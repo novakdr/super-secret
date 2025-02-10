@@ -43,12 +43,18 @@ h5, .h5 {
 }
 
 .display {
-  font-size: var(--step-6);
+  font-size: var(--step-2);
+  max-inline-size: 41ch;
 }
 
 p, .p {
   font-size: var(--step-0);
   line-height: 1.8;
+}
+
+a:focus-visible {
+  outline: 2px solid blue;
+  outline-offset: 0.25rem;
 }
 
 figure {
@@ -65,7 +71,6 @@ figure {
     }
   }
 }
-
 
 blockquote {
   display: flex;
@@ -123,7 +128,8 @@ hr {
 }
 
 .splash-container {
-  max-inline-size: 50rem;
+  max-inline-size: 60rem;
+  inline-size: 100%;
   padding-block: var(--space-l);
   padding-inline: var(--space-xl);
   background-color: var(--color-light);
@@ -149,12 +155,8 @@ hr {
 
 .home-links {
   display: grid;
-  gap: var(--space-2xs);
+  gap: var(--space-2xl);
   place-items: flex-start;
-
-  @media (min-width: 450px) {
-    place-items: center;
-  }
 }
 
 .navigation {
@@ -255,6 +257,12 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space, 1rem);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  gap: var(--space-xs);
 }
 
 .blog-info {
@@ -361,4 +369,47 @@ footer {
 .box {
   border: var(--border-dark);
   padding: var(--space-xs);
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding-inline: var(--space-s);
+  padding-block: var(--space-2xs);
+  width: 100%;
+
+  &:focus-visible {
+    outline: 2px solid blue;
+    outline-offset: 0.35rem;
+  }
+}
+
+.card {
+  background-color: var(--color-light);
+  border: 2px solid var(--color-dark);
+  padding: var(--space-xs);
+  transition: all 1s;
+
+  &:hover {
+    background-color: var(--bg-hover-color);
+
+    & svg > path:nth-child(3) {
+      fill: var(--color-dark);
+    }
+  }
+
+  &.hover-work {
+    --bg-hover-color: var(--color-accent-2);
+  }
+
+  &.hover-about {
+    --bg-hover-color: var(--color-accent-1);
+  }
+
+  &.hover-odds-ends {
+    --bg-hover-color: var(--color-accent-3);
+  }
 }
