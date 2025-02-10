@@ -42,9 +42,13 @@ h5, .h5 {
   font-size: var(--step-1);
 }
 
-.display {
+.home-display {
   font-size: var(--step-2);
   max-inline-size: 41ch;
+}
+
+.display {
+  font-size: var(--step-6);
 }
 
 p, .p {
