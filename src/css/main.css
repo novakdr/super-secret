@@ -62,17 +62,18 @@ a:focus-visible {
 }
 
 figure {
-  padding-block: var(--space-m);
-  display: grid;
-  place-items: center;
-  gap: var(--space-xs);
-  
+  padding-block: var(--space-xs);
+
   & > figcaption {
     text-align: center;
 
     &:before, &:after {
       content: "+";
     }
+  }
+
+  &.stack {
+    --space: var(--space-s);
   }
 }
 
@@ -377,7 +378,7 @@ footer {
 
 .box {
   border: var(--border-dark);
-  padding: var(--space-xs);
+  padding: var(--space-m);
 }
 
 .button {
