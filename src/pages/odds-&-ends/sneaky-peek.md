@@ -55,7 +55,7 @@ I almost forgot! The structure of these posts will probably evolve over time. Ty
 
 Maybe I'll even talk about this fella and its time in the web design sun:
 
-<figure class="stack">
+<figure class="stack center">
     <img src="/images/art/vonnegut.png" alt="Kurt Vonnegut's drawing of a hole of sorts." class="box">
     <figcaption class="small-text">
     Where to begin?
