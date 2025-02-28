@@ -49,6 +49,7 @@ h5, .h5 {
 
 .display {
   font-size: var(--step-6);
+  line-height: 1.1; 
 }
 
 p, .p {
@@ -293,8 +294,8 @@ footer {
 }
 
 .link, .link-dark, .big-link, .big-link-dark {
-  --padding: 0.15rem;
-  --padding-block: 0.25rem;
+  --padding: 0.15em;
+  --padding-block: 0.25em;
   --hover-bg-color: var(--color-light);
   --hover-text-color: var(--color-dark);
   --hover-decoration: var(--color-light);
@@ -317,7 +318,7 @@ footer {
 .big-link, .big-link-dark {
   font-size: var(--step-1);
   text-underline-offset: var(--space-2xs);
-  padding-inline: 0.5rem;
+  padding-inline: 0.5em;
 
   &.disabled {
     pointer: none;
@@ -350,6 +351,10 @@ footer {
   align-items: center;
   padding-inline: 0.5rem;
   opacity: 70%;
+
+  & > p:last-of-type {
+    display: none;
+  }
 }
 
 .small-text {

@@ -1,0 +1,35 @@
+---
+import Layout from "./Layout.astro";
+const { frontmatter } = Astro.props;
+import PageHeading from "../components/PageHeading.astro";
+import Navigation from "../components/Navigation.astro";
+---
+
+<Layout pageTitle={frontmatter.title} hasFooter >
+  <PageHeading imageLight="/images/work/work-heading-light.svg" imageDark="/images/work/work-heading-dark.svg" />
+  <section class="container">
+    <Navigation eyeColor="var(--color-accent-2)" addMarginEnd="--margin-end: var(--space-2xl);" hasHome />
+    <article class="stack" style="--space: var(--space-l);">
+      <h1 class="display">{frontmatter.title}</h1>
+      <hr>
+      <div class="stack">
+        <h2>Overview</h2>
+        <slot />
+      </div>
+      <hr>
+      {frontmatter.workImages && 
+        <section class="stack">
+          <h2>Gallery</h2>
+          {frontmatter.workImages.map((workImage: any) =>
+            <figure class="stack">
+              <img src={workImage.url} alt={workImage.description} class="box">
+              <figcaption class="small-text">
+              {workImage.description}
+              </figcaption>
+            </figure>
+          )}
+        </section>  
+      }
+    </article>
+  </section>
+</Layout>
