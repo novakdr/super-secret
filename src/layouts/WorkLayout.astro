@@ -11,12 +11,18 @@ import Navigation from "../components/Navigation.astro";
     <Navigation eyeColor="var(--color-accent-2)" addMarginEnd="--margin-end: var(--space-2xl);" hasHome />
     <article class="stack" style="--space: var(--space-l);">
       <h1 class="display">{frontmatter.title}</h1>
+      <span class="work-tags">
+        {frontmatter.skills.map((skill: any) => 
+          <p class="small-text">{skill}</p>
+          <p>/</p>
+        )}
+      </span>
       <hr>
-      <div class="stack">
+      <!-- <div class="stack">
         <h2>Overview</h2>
         <slot />
       </div>
-      <hr>
+      <hr> -->
       {frontmatter.workImages && 
         <section class="stack">
           <h2>Gallery</h2>
