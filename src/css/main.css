@@ -49,6 +49,7 @@ h5, .h5 {
 
 .display {
   font-size: var(--step-6);
+  line-height: 1.1; 
 }
 
 p, .p {
@@ -126,9 +127,11 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   display: grid;
   place-items: center;
+  border: var(--border-dark);
 
   @media (prefers-color-scheme: dark) {
     background-image: url('/images/home/home-background-dark.svg');
@@ -136,11 +139,11 @@ img {
 }
 
 .splash-container {
-  max-inline-size: 60rem;
+  max-inline-size: 65rem;
   inline-size: 100%;
   padding: var(--space-l);
-  background-color: var(--color-light);
-  border: var(--border-dark);
+  /* background-color: var(--color-light); */
+  /* border: var(--border-dark); */
 
   @media (max-width: 450px) {
     height: 100%;
@@ -293,8 +296,8 @@ footer {
 }
 
 .link, .link-dark, .big-link, .big-link-dark {
-  --padding: 0.15rem;
-  --padding-block: 0.25rem;
+  --padding: 0.15em;
+  --padding-block: 0.25em;
   --hover-bg-color: var(--color-light);
   --hover-text-color: var(--color-dark);
   --hover-decoration: var(--color-light);
@@ -317,7 +320,7 @@ footer {
 .big-link, .big-link-dark {
   font-size: var(--step-1);
   text-underline-offset: var(--space-2xs);
-  padding-inline: 0.5rem;
+  padding-inline: 0.5em;
 
   &.disabled {
     pointer: none;
@@ -350,6 +353,10 @@ footer {
   align-items: center;
   padding-inline: 0.5rem;
   opacity: 70%;
+
+  & > p:last-of-type {
+    display: none;
+  }
 }
 
 .small-text {
@@ -382,6 +389,8 @@ footer {
   padding-inline: var(--space-s);
   padding-block: var(--space-2xs);
   width: 100%;
+  font-size: 1.35rem;
+  font-weight: 600;
 
   &:focus-visible {
     outline: 2px solid blue;
