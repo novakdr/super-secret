@@ -377,7 +377,22 @@ footer {
 .box {
   border: var(--border-dark);
   padding: var(--space-2xs); 
-  /* box-shadow: 3px 3px 0px var(--color-light), 12px 12px 0px var(--color-dark); */
+}
+
+.soon {
+  background-image: url('/images/home/home-background-light.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  aspect-ratio: 16 / 9;
+  
+  @media (prefers-color-scheme: dark) {
+    background-image: url('/images/home/home-background-dark.svg');
+  }
 }
 
 .button {
