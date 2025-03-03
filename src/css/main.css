@@ -388,7 +388,6 @@ footer {
   justify-content: center;
   align-items: center;
   height: 20rem;
-  aspect-ratio: 16 / 9;
   
   @media (prefers-color-scheme: dark) {
     background-image: url('/images/home/home-background-dark.svg');
