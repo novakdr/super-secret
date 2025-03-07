@@ -4,7 +4,7 @@ const allPosts = Object.values(import.meta.glob('../pages/work/*.md', { eager: t
 
 {allPosts.map((post: any) => 
     <div class="stack">
-      <a href={post.url} class="big-link" style="--hover-bg-color: var(--color-dark);--hover-text-color: var(--color-light);">{post.frontmatter.title}</a>
+      <a href={post.url} class="link link-big">{post.frontmatter.title}</a>
       <span class="work-tags">
         {post.frontmatter.skills.map((skill: any) => 
           <p class="small-text">{skill}</p>
