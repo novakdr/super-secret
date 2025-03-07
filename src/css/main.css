@@ -62,8 +62,7 @@ p, .p {
   color: var(--link-text-color, var(--color-dark));
   text-decoration: none;
   position: relative;
-  width: max-content;
-  text-align: center;
+  max-width: max-content;
   z-index: 1;
   font-size: var(--link-font-size, inherit);
   line-height: 1;
