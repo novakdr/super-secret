@@ -83,14 +83,6 @@ p, .p {
   left: -0.15em;
   transition: all .3s ease-out;
   z-index: -1;
-
-  @media (prefers-reduced-motion) {
-    transition: none;
-  }
-
-  @media (max-width: 450px) {
-    transition: none;
-  }
 }
 
 
