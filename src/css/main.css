@@ -58,7 +58,7 @@ p, .p {
 }
 
 .link {
-  display: flex;
+  display: inline-block;
   color: var(--link-text-color, var(--color-dark));
   width: fit-content;
   text-decoration: none;
@@ -83,6 +83,14 @@ p, .p {
   left: -0.15em;
   transition: all .3s ease-out;
   z-index: -1;
+
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
+
+  @media (max-width: 450px) {
+    transition: none;
+  }
 }
 
 
