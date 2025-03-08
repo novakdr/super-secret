@@ -2,6 +2,7 @@
 layout: '../../layouts/PostsLayout.astro'
 title: 'For those that seek'
 pubDate: '02/03/2025'
+description: "A very early and most sneaky look at what's to come."
 listeningTo: 
     title: 'Snake Sideways - Do Nothing'
     url: 'https://music.apple.com/us/album/snake-sideways/1665764535?i=1665764851'

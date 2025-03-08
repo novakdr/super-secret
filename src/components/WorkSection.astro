@@ -3,15 +3,14 @@ const allPosts = Object.values(import.meta.glob('../pages/work/*.md', { eager: t
 ---
 
 {allPosts.map((post: any) => 
-    <div class="stack" style="padding-inline: var(--space-2xs);">
-      <a href={post.url} class="link link-big">{post.frontmatter.title}</a>
+    <a href={post.url} class="link-work">
+      <p class="work-title">{post.frontmatter.title}</p>
       <span class="work-tags">
         {post.frontmatter.skills.map((skill: any) => 
           <p class="small-text">{skill}</p>
           <p>/</p>
         )}
       </span>
-    </div>
-    <hr/>
+    </a>
   )
 }

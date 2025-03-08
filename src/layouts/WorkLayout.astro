@@ -6,17 +6,18 @@ import PageHeading from "../components/PageHeading.astro";
 
 <Layout pageTitle={frontmatter.title} hasFooter >
   <PageHeading imageLight="/images/work/work-heading-light.svg" imageDark="/images/work/work-heading-dark.svg" />
-  <section class="container stack" style="margin-block-start: 4rem;">
+  <section class="container stack" style="margin-block-start: var(--space-xl);">
     <a href="/work" class="link link-back">&lt; Back</a>
     <article class="stack" style="--space: var(--space-l);">
-      <h1 class="display">{frontmatter.title}</h1>
-      <span class="work-tags">
-        {frontmatter.skills.map((skill: any) => 
-          <p class="small-text">{skill}</p>
-          <p>/</p>
-        )}
-      </span>
-      <hr>
+      <div>
+        <h1 class="display">{frontmatter.title}</h1>
+        <span class="work-tags border-bottom">
+          {frontmatter.skills.map((skill: any) => 
+            <p class="small-text">{skill}</p>
+            <p>/</p>
+          )}
+        </span>
+      </div>
       {frontmatter.soon && 
         <slot />
       }

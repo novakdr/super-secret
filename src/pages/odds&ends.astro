@@ -10,11 +10,18 @@ const allPosts = Object.values(import.meta.glob('./odds-&-ends/*.md', { eager: t
 	<PageHeading imageLight="/images/odds&ends/odds-ends-heading-light.svg" imageDark="/images/odds&ends/odds-ends-heading-dark.svg" />
 	<section class="container">
 		<Navigation eyeColor="var(--color-accent-3)" addMarginEnd="--margin-end: var(--space-2xl);" hasHome />
-		<article class="stack">
+		<article>
 			<Header title="Odds & Ends" subTitle="A place, a location, a digital cupboard for me to store and share the things I'm working on, the random stuff that finds me, or the odd written bit of thought."/>
-			<ul class="stack">
-				{allPosts.map((post: any) => <li><a href={post.url} class="link link-big">{post.frontmatter.title}</a></li>)}
-			</ul>
+			<section class="stack">
+				{allPosts.map((post: any) => 
+					<a href={post.url} class="link-work stack" style="--card-color-hover: var(--color-accent-3); --space: var(--space-xs);">
+						<p class="small-text work-tags">{post.frontmatter.pubDate}</p>
+						<p class="h3 mono">{post.frontmatter.title}</p>
+						<p class="work-tags">{post.frontmatter.description}</p>
+					</a>
+				)
+			}
+			</section>
 		</article>
 	</section>
 </Layout>

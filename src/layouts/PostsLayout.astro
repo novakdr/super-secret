@@ -7,15 +7,16 @@ import Navigation from "../components/Navigation.astro";
 
 <Layout pageTitle={frontmatter.title} hasFooter >
   <PageHeading imageLight="/images/odds&ends/odds-ends-heading-light.svg" imageDark="/images/odds&ends/odds-ends-heading-dark.svg" />
-  <section class="container">
-    <Navigation eyeColor="var(--color-accent-3)" addMarginEnd="--margin-end: var(--space-2xl);" hasHome />
+  <section class="container stack" style="margin-block-start: var(--space-xl);">
+    <a href="/work" class="link link-back">&lt; Back</a>
     <article class="stack" style="--space: var(--space-l);">
-      <h1 class="display">{frontmatter.title}</h1>
-      <div class="blog-info">
-        <p class="small-text">Published: <span class="underline">{frontmatter.pubDate}</span></p>
-        <p class="small-text">Listening: <a href={frontmatter.listeningTo.url} class="link">{frontmatter.listeningTo.title}</a></p>
+      <div>
+        <h1 class="display">{frontmatter.title}</h1>
+        <div class="blog-info border-bottom">
+          <p class="small-text">Published: <span class="underline">{frontmatter.pubDate}</span></p>
+          <p class="small-text">Listening: <a href={frontmatter.listeningTo.url} class="link">{frontmatter.listeningTo.title}</a></p>
+        </div>
       </div>
-      <hr>
       <slot />
     </article>
   </section>

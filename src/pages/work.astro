@@ -12,7 +12,9 @@ import WorkSection from '../components/WorkSection.astro';
 		<Navigation eyeColor="var(--color-accent-2)" addMarginEnd="--margin-end: var(--space-2xl);" hasHome />
 		<article class="stack">
 			<Header title="Work" subTitle="* Project case studies available upon request" link="/images/pdf/DavidNovakResume.pdf" linkName="Resume"/>
-			<WorkSection />
+			<section class="stack" style="--space: 0;">
+				<WorkSection />
+			</section>
 		<article/>
 	</section>
 </Layout>
