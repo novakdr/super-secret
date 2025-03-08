@@ -58,11 +58,11 @@ p, .p {
 }
 
 .link {
-  display: inline-block;
+  display: flex;
   color: var(--link-text-color, var(--color-dark));
+  width: fit-content;
   text-decoration: none;
   position: relative;
-  max-width: max-content;
   z-index: 1;
   font-size: var(--link-font-size, inherit);
   line-height: 1;
@@ -347,9 +347,8 @@ footer {
 .work-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-xs);
+  gap: var(--space-2xs);
   align-items: center;
-  padding-inline: 0.5rem;
   opacity: 70%;
 
   & > p:last-of-type {
