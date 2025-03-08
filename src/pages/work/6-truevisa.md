@@ -1,5 +1,6 @@
 ---
 layout: '../../layouts/WorkLayout.astro'
+name: 'TrueVisa (BAL)'
 title: 'TrueVisa (BAL) Immigration Platform'
 workImages: [
   {url: "/images/work/truevisa/truevisa-mockup.png", description: "Landing page iterations and dashboard views"}

@@ -1,5 +1,6 @@
 ---
 layout: '../../layouts/WorkLayout.astro'
+name: 'Culligan Quench'
 title: 'Culligan Quench Inventory Management App'
 workImages: [
   {url: "/images/work/quench/quench-wireframes.png", description: "Wireframes"}, 

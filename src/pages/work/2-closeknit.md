@@ -1,5 +1,6 @@
 ---
 layout: '../../layouts/WorkLayout.astro'
+name: 'CloseKnit Health'
 title: 'CloseKnit Health Frontend Development'
 workImages: [
   {url: "/images/work/closeknit/closeknit-mockup.png", description: "Landing page and dashboard elements"}

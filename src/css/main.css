@@ -85,6 +85,23 @@ p, .p {
   z-index: -1;
 }
 
+@media (max-width: 450px) {
+  .link-big::after {
+    border-bottom: none;
+    transition: none;
+  }
+
+  .link::after {
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link::after {
+    transition: none;
+  }
+}
+
 
 .link:hover::after {
   height: calc(100% + var(--link-padding-y, 9px));

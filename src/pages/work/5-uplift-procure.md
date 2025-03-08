@@ -1,10 +1,11 @@
 ---
 layout: '../../layouts/WorkLayout.astro'
+name: 'Uplift Procure'
 title: 'Uplift Procure Procurement Platform'
 workImages: [
   {url: "/images/work/uplift/uplift-mockup.png", description: "Procurement platform elements"}
 ]
-skills: [ "Product Design", "Frontend Development", "React", "RemixJS"]
+skills: [ "Product Design", "Frontend Development", "React", "RemixJS", "Start Up"]
 key: 5
 ---
 

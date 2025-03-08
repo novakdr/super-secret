@@ -1,5 +1,6 @@
 ---
 layout: '../../layouts/WorkLayout.astro'
+name: 'Harvard Business Review'
 title: 'Harvard Business Review Mobile App'
 workImages: [
   {url: "/images/work/hbr/hbr-ds-mockup.png", description: "Design system components"}, 

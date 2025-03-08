@@ -1,5 +1,6 @@
 ---
 layout: '../../layouts/WorkLayout.astro'
+name: 'LXD Research & Display'
 title: 'LXD Research & Display Frontend Delevopment'
 workImages: [
   {url: "/images/work/lxd/lxd-mockup.png", description: "First logo iteration"}, 
