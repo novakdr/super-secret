@@ -2,12 +2,13 @@
 import Layout from "./Layout.astro";
 const { frontmatter, comingSoon } = Astro.props;
 import PageHeading from "../components/PageHeading.astro";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <Layout pageTitle={frontmatter.title} hasFooter >
   <PageHeading imageLight="/images/work/work-heading-light.svg" imageDark="/images/work/work-heading-dark.svg" />
-  <section class="container stack" style="margin-block-start: var(--space-xl);">
-    <a href="/work" class="link link-back">&lt; Back</a>
+  <section class="container">
+    <Navigation eyeColor="var(--color-accent-2)" addMarginEnd="--margin-end: var(--space-2xl);" />
     <article class="stack" style="--space: var(--space-l);">
       <div>
         <h1 class="display">{frontmatter.title}</h1>

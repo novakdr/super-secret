@@ -7,8 +7,8 @@ import Navigation from "../components/Navigation.astro";
 
 <Layout pageTitle={frontmatter.title} hasFooter >
   <PageHeading imageLight="/images/odds&ends/odds-ends-heading-light.svg" imageDark="/images/odds&ends/odds-ends-heading-dark.svg" />
-  <section class="container stack" style="margin-block-start: var(--space-xl);">
-    <a href="/work" class="link link-back">&lt; Back</a>
+  <section class="container">
+    <Navigation eyeColor="var(--color-accent-3)" addMarginEnd="--margin-end: var(--space-2xl);" />
     <article class="stack" style="--space: var(--space-l);">
       <div>
         <h1 class="display">{frontmatter.title}</h1>
