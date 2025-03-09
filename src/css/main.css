@@ -236,7 +236,7 @@ img {
 .header-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: baseline;
 }
 
 footer {
@@ -331,10 +331,12 @@ footer {
 }
 
 .link-work {
+  display: grid;
+  gap: var(--space-xs);
   border-top: 0.5px solid var(--color-dark-fade);
   border-bottom: 0.5px solid var(--color-dark-fade);
-  padding-block: var(--space-s);
-  padding-inline: var(--space-m);
+  padding-block: var(--space-m);
+  padding-inline: var(--space-s);
   position: relative; 
   z-index: 1;
 
@@ -390,6 +392,7 @@ footer {
   width: 100%;
   font-size: 1.35rem;
   font-weight: 600;
+  line-height: 1.5;
 
   &:focus-visible {
     outline: 2px solid blue;
@@ -416,26 +419,54 @@ footer {
   background-color: var(--color-light);
   border: 2px solid var(--color-dark);
   padding: var(--space-xs);
-  transition: all 1s;
+  padding-block-end: var(--space-s);
+  position: relative;
+  z-index: 100;
+
+  &::after {
+    content: "";
+    background: var(--bg-hover, var(--color-light));
+    height: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease-out;
+    z-index: -3;
+  }
+
+  &:hover::after {
+    height: 100%;
+  }
 
   &:hover {
-    background-color: var(--bg-hover-color);
-
     & svg > path:nth-child(3) {
       fill: var(--color-dark);
     }
   }
 
   &.hover-work {
-    --bg-hover-color: var(--color-accent-2);
+    --bg-hover: var(--color-accent-2);
   }
 
   &.hover-about {
-    --bg-hover-color: var(--color-accent-1);
+    --bg-hover: var(--color-accent-1);
   }
 
   &.hover-odds-ends {
-    --bg-hover-color: var(--color-accent-3);
+    --bg-hover: var(--color-accent-3);
+  }
+}
+
+@media (max-width: 450px) {
+  .card::after {
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card::after {
+    transition: none;
   }
 }
 
@@ -488,5 +519,5 @@ footer {
 
 .mono {
   font-family: var(--font-base);
-  font-weight: 650;
+  font-weight: 600;
 }
