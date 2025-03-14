@@ -332,24 +332,16 @@ footer {
 
 .link-work {
   display: grid;
-  gap: var(--space-xs);
-  border-top: 0.5px solid var(--color-dark-fade);
-  border-bottom: 0.5px solid var(--color-dark-fade);
+  gap: var(--space-s);
+  border-bottom: 1px solid var(--color-dark-fade);
   padding-block: var(--space-m);
   padding-inline: var(--space-s);
   position: relative; 
   z-index: 1;
 
-  & > .work-title {
+  & .work-title {
     font-size: var(--step-1);
-  }
-
-  &:first-of-type {
-    border-top: none;
-  }
-
-  &:last-of-type {
-    border-bottom: 1px solid var(--color-dark-fade);
+    line-height: 1.5;
   }
 
   &::after {
@@ -503,8 +495,13 @@ footer {
   line-height: 150%;
 }
 
-.small-text {
+.small-text, .sub-text {
   font-size: var(--step--1);
+  line-height: 1.5;
+}
+
+.sub-text {
+  line-height: 2.1;
 }
 
 .border-bottom {

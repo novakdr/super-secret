@@ -8,7 +8,7 @@ const allPosts = Object.values(import.meta.glob('../pages/work/*.md', { eager: t
       <span class="work-tags">
         {post.frontmatter.skills.map((skill: any) => 
           <p class="small-text">{skill}</p>
-          <p>/</p>
+          <p class="small-text">/</p>
         )}
       </span>
     </a>
