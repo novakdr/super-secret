@@ -1,29 +1,47 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import PageHeading from '../components/PageHeading.astro';
-import Navigation from '../components/Navigation.astro';
-import Header from '../components/Header.astro';
-const allPosts = Object.values(import.meta.glob('./odds-&-ends/*.md', { eager: true }));
+import Layout from "../layouts/Layout.astro";
+import PageHeading from "../components/PageHeading.astro";
+import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
+const allPosts = Object.values(
+  import.meta.glob("./odds-&-ends/*.md", { eager: true }),
+);
 ---
 
-<Layout pageTitle="Odds & Ends | Dave Novak" hasFooter >
-	<PageHeading imageLight="/images/odds&ends/odds-ends-heading-light.svg" imageDark="/images/odds&ends/odds-ends-heading-dark.svg" />
-	<section class="container">
-		<Navigation eyeColor="var(--color-accent-3)" addMarginEnd="--margin-end: var(--space-2xl);" />
-		<article>
-			<Header title="Odds & Ends" subTitle="A place, a location, a digital cupboard for me to store and share the things I'm working on, the random stuff that finds me, or the odd written bit of thought."/>
-			<section class="stack">
-				{allPosts.map((post: any) => 
-					<a href={post.url} class="link-work" style="--card-color-hover: var(--color-accent-3); gap: var(--space-s);">
-						<p class="small-text work-tags">{post.frontmatter.pubDate}</p>
-						<span class="stack" style="--space: var(--space-2xs);">
-							<p class="work-title">{post.frontmatter.title}</p>
-							<p class="work-tags small-text">{post.frontmatter.description}</p>
-						</span>
-					</a>
-				)
-			}
-			</section>
-		</article>
-	</section>
+<Layout pageTitle="Odds & Ends | Dave Novak" hasFooter>
+  <PageHeading
+    imageLight="/images/odds&ends/odds-ends-heading-light.svg"
+    imageDark="/images/odds&ends/odds-ends-heading-dark.svg"
+  />
+  <section class="container">
+    <Navigation
+      eyeColor="var(--color-accent-3)"
+      addMarginEnd="--margin-end: var(--space-2xl);"
+    />
+    <article>
+      <Header
+        title="Odds & Ends"
+        subTitle="A place, a location, a digital cupboard for me to store and share the things I'm working on, the random stuff that finds me, or the odd written bit of thought."
+      />
+      <section class="stack">
+        {
+          allPosts.map((post: any) => (
+            <a
+              href={post.url}
+              class="link-work"
+              style="--card-color-hover: var(--color-accent-3); gap: var(--space-s);"
+            >
+              <p class="small-text work-tags">{post.frontmatter.pubDate}</p>
+              <span class="stack" style="--space: var(--space-2xs);">
+                <p class="work-title">{post.frontmatter.title}</p>
+                <p class="work-tags small-text">
+                  {post.frontmatter.description}
+                </p>
+              </span>
+            </a>
+          ))
+        }
+      </section>
+    </article>
+  </section>
 </Layout>

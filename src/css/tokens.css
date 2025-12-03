@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Inconsolata";
-  src: url("../../fonts/Inconsolata-VariableFont_wdth,wght.ttf") format("truetype-variations");
+  src: url("../../fonts/Inconsolata-VariableFont_wdth,wght.ttf")
+    format("truetype-variations");
   font-stretch: 25% 150%;
   font-weight: 200 900;
   font-display: swap;
@@ -15,14 +16,14 @@
 
 :root {
   /* COLOR */
-  --coffee-stained-white-shirt: #FEFAE4;
+  --coffee-stained-white-shirt: #fefae4;
   --coffee-stained-white-shirt-fade: #959388;
-  --a-soul-of-sorts: #0A0A0A;
-  --a-soul-of-sorts-fade: #1B1B1B;
-  --pacific-salmon-red: #FF6262;
-  --my-large-staub-pan-yellow: #E6AA2B;
-  --evil-eye-blue: #2D6CFF;
-  --a-special-shade-of-purple: #A772FF;
+  --a-soul-of-sorts: #0a0a0a;
+  --a-soul-of-sorts-fade: #1b1b1b;
+  --pacific-salmon-red: #ff6262;
+  --my-large-staub-pan-yellow: #e6aa2b;
+  --evil-eye-blue: #2d6cff;
+  --a-special-shade-of-purple: #a772ff;
 
   --color-light: var(--coffee-stained-white-shirt);
   --color-light-fade: var(--coffee-stained-white-shirt-fade);

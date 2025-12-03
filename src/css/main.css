@@ -12,33 +12,47 @@ body {
   font-size: var(--step-0);
 }
 
-*::selection{
+*::selection {
   background-color: var(--color-accent-1);
   color: var(--a-soul-of-sorts);
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
   font-family: var(--font-header);
   line-height: 90%;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: var(--step-5);
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: var(--step-4);
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: var(--step-3);
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: var(--step-2);
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: var(--step-1);
 }
 
@@ -49,11 +63,12 @@ h5, .h5 {
 
 .display {
   font-size: var(--step-6);
-  line-height: 1.1; 
+  line-height: 1.1;
   margin-block-end: var(--space-s);
 }
 
-p, .p {
+p,
+.p {
   font-size: var(--step-0);
   line-height: 2.1;
 }
@@ -69,7 +84,8 @@ figure {
   & > figcaption {
     text-align: center;
 
-    &:before, &:after {
+    &:before,
+    &:after {
       content: "+";
     }
   }
@@ -101,7 +117,6 @@ blockquote {
       line-height: 50%;
     }
   }
-
 }
 
 ul {
@@ -119,7 +134,7 @@ img {
 
 /* LAYOUT  */
 .splash {
-  background-image: url('/images/home/home-background-light.svg');
+  background-image: url("/images/home/home-background-light.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -130,7 +145,7 @@ img {
   border: var(--border-dark);
 
   @media (prefers-color-scheme: dark) {
-    background-image: url('/images/home/home-background-dark.svg');
+    background-image: url("/images/home/home-background-dark.svg");
   }
 }
 
@@ -165,7 +180,7 @@ img {
 
 .navigation {
   --margin-end: var(--space-l);
-  
+
   align-items: center;
   display: flex;
   gap: var(--space-m);
@@ -220,7 +235,10 @@ img {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(var(--column-size, 250px), 100%), 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(var(--column-size, 250px), 100%), 1fr)
+  );
   gap: var(--grid-gap, var(--space-s));
 
   @media (max-width: 450px) {
@@ -249,9 +267,9 @@ footer {
 }
 
 .footer-header {
-  background-image: url('/images/footer/contact-dark.svg');
+  background-image: url("/images/footer/contact-dark.svg");
   background-position: center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-size: cover;
   height: 4rem;
 
@@ -264,7 +282,7 @@ footer {
   }
 
   @media (prefers-color-scheme: dark) {
-    background-image: url('/images/footer/contact-light.svg');
+    background-image: url("/images/footer/contact-light.svg");
   }
 }
 
@@ -299,7 +317,7 @@ footer {
     position: absolute;
     bottom: -0.2em;
     left: -0.15em;
-    transition: all .3s ease-out;
+    transition: all 0.3s ease-out;
     z-index: -1;
   }
 
@@ -323,7 +341,7 @@ footer {
   --link-text-color-hover: var(--color-dark);
   --link-bg: var(--color-light);
   --link-border: var(--color-dark);
-  --link-border-hover: var(--color-light)
+  --link-border-hover: var(--color-light);
 }
 
 .link-back {
@@ -336,7 +354,7 @@ footer {
   border-bottom: 1px solid var(--color-dark-fade);
   padding-block: var(--space-m);
   padding-inline: var(--space-s);
-  position: relative; 
+  position: relative;
   z-index: 1;
 
   & .work-title {
@@ -362,13 +380,15 @@ footer {
 }
 
 @media (max-width: 450px) {
-  .link::after, .link-work::after {
+  .link::after,
+  .link-work::after {
     transition: none;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .link::after, .link-work::after {
+  .link::after,
+  .link-work::after {
     transition: none;
   }
 }
@@ -394,7 +414,7 @@ footer {
 
 .box {
   border: var(--border-dark);
-  padding: var(--space-2xs); 
+  padding: var(--space-2xs);
 }
 
 .blog-info {
@@ -475,7 +495,7 @@ footer {
 }
 
 .soon {
-  background-image: url('/images/home/home-background-light.svg');
+  background-image: url("/images/home/home-background-light.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -483,9 +503,9 @@ footer {
   justify-content: center;
   align-items: center;
   height: 20rem;
-  
+
   @media (prefers-color-scheme: dark) {
-    background-image: url('/images/home/home-background-dark.svg');
+    background-image: url("/images/home/home-background-dark.svg");
   }
 }
 
@@ -495,7 +515,8 @@ footer {
   line-height: 150%;
 }
 
-.small-text, .sub-text {
+.small-text,
+.sub-text {
   font-size: var(--step--1);
   line-height: 1.5;
 }

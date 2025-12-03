@@ -6,12 +6,17 @@ const { imageLight, imageDark } = Astro.props;
   <div class="page-heading-image"></div>
 </div>
 
-<style define:vars={{imageLight: `url(${imageLight})`, imageDark: `url(${imageDark})`}}>
+<style
+  define:vars={{
+    imageLight: `url(${imageLight})`,
+    imageDark: `url(${imageDark})`,
+  }}
+>
   .page-heading-container {
     padding-block-end: var(--space-m);
     border-bottom: var(--border-dark);
   }
-  
+
   .page-heading-image {
     height: 7rem;
     background-image: var(--imageLight);

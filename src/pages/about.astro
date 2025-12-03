@@ -1,106 +1,175 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import PageHeading from '../components/PageHeading.astro';
-import Navigation from '../components/Navigation.astro';
-import Header from '../components/Header.astro';
+import Layout from "../layouts/Layout.astro";
+import PageHeading from "../components/PageHeading.astro";
+import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 ---
 
-<Layout pageTitle="About | Dave Novak" hasFooter >
-  <PageHeading imageLight="/images/about/about-heading-light.svg" imageDark="/images/about/about-heading-dark.svg" />
+<Layout pageTitle="About | Dave Novak" hasFooter>
+  <PageHeading
+    imageLight="/images/about/about-heading-light.svg"
+    imageDark="/images/about/about-heading-dark.svg"
+  />
   <section class="container">
-    <Navigation eyeColor="var(--color-accent-1)" addMarginEnd="--margin-end: var(--space-2xl);" hasHome />
+    <Navigation
+      eyeColor="var(--color-accent-1)"
+      addMarginEnd="--margin-end: var(--space-2xl);"
+      hasHome
+    />
     <article class="stack">
-      <Header title="About" subTitle="A history of sorts. A collection of events that I've been a part of over the years. My story so far." />
-      <div class="stack border-bottom" style="margin-block-start:var(--space-l);">
+      <Header
+        title="About"
+        subTitle="A history of sorts. A collection of events that I've been a part of over the years. My story so far."
+      />
+      <div
+        class="stack border-bottom"
+        style="margin-block-start:var(--space-l);"
+      >
         <h2 class="h3">Now</h2>
-        <p>
-          Product designer, UX enginner, and owner of too many hobbies.
-        </p>
+        <p>Product designer, UX enginner, and owner of too many hobbies.</p>
       </div>
-      <div class="stack border-bottom" style="margin-block-start:var(--space-l);">
+      <div
+        class="stack border-bottom"
+        style="margin-block-start:var(--space-l);"
+      >
         <h2 class="h3">Notable Clients</h2>
-        <p>
-          Harvard Business Review & Culligan Quench
-        </p>
+        <p>Harvard Business Review & Culligan Quench</p>
       </div>
-      <div class="stack border-bottom" style="margin-block-start:var(--space-l);">
+      <div
+        class="stack border-bottom"
+        style="margin-block-start:var(--space-l);"
+      >
         <h2 class="h3">Previously</h2>
         <span>
           <p>
-            Product Designer at <a href="https://thoughtbot.com" class="link">thoughtbot</a>
+            Product Designer at <a href="https://thoughtbot.com" class="link"
+              >thoughtbot</a
+            >
           </p>
-          <p class="small-text">
-            2022 - 2025
-          </p>
+          <p class="small-text">2022 - 2025</p>
         </span>
       </div>
       <div class="stack" style="margin-block-start:var(--space-l);">
         <h2 class="h3">The story so far</h2>
         <p>
-          Where to start? Where does any (good?) story start? The beginning? I don't know. Maybe... Let's not get too caught up in the small stuff and let's try to focus on the super big things that've helped me along this non-linear design journey.
+          Where to start? Where does any (good?) story start? The beginning? I
+          don't know. Maybe... Let's not get too caught up in the small stuff
+          and let's try to focus on the super big things that've helped me along
+          this non-linear design journey.
         </p>
         <p>Right, the beginning-ish.</p>
         <p>
-          I grew up overseas in the teeny-tiny country of Belgium. I attended an international school during my formative years learning the ways and secrets of Belgium itself. I also got pretty good at speaking French. Looking back, it might've accidentally been my first language for a bit there. Interesting how languages work.
-        </p>    
+          I grew up overseas in the teeny-tiny country of Belgium. I attended an
+          international school during my formative years learning the ways and
+          secrets of Belgium itself. I also got pretty good at speaking French.
+          Looking back, it might've accidentally been my first language for a
+          bit there. Interesting how languages work.
+        </p>
         <p>
-          I'll let you in on a secret that I happened on while growing up there...
+          I'll let you in on a secret that I happened on while growing up
+          there...
         </p>
         <p>
           The source of all that magic circulating around Belgium is... waffles!
         </p>
         <figure class="stack">
-          <img src="/images/about/belgian-waffle.jpg" alt="Neat stacks of Liege Belgian Waffles cooling on a storefront rack." class="box">
+          <img
+            src="/images/about/belgian-waffle.jpg"
+            alt="Neat stacks of Liege Belgian Waffles cooling on a storefront rack."
+            class="box"
+          />
           <figcaption class="small-text">
-            Come on! Look at those things. <a href="https://en.wikipedia.org/wiki/File:Gaufre_liege.jpg" class="link link-small">Link</a>
+            Come on! Look at those things. <a
+              href="https://en.wikipedia.org/wiki/File:Gaufre_liege.jpg"
+              class="link link-small">Link</a
+            >
           </figcaption>
         </figure>
         <p>
-          Yup. Mysteriously simple and ever-delicious. The best ones can be found scattered across the town centers of southern Belgium. Follow the sweetly scented, cobbled streets at the heart of the city and find the faithful waffle keeper, the street vendor. Stand with tall and softly say, "Une gaufre s'il te plait."
+          Yup. Mysteriously simple and ever-delicious. The best ones can be
+          found scattered across the town centers of southern Belgium. Follow
+          the sweetly scented, cobbled streets at the heart of the city and find
+          the faithful waffle keeper, the street vendor. Stand with tall and
+          softly say, "Une gaufre s'il te plait."
         </p>
+        <p>Now you know. Don't tell anybody, though. Shhh! It's our secret.</p>
         <p>
-          Now you know. Don't tell anybody, though. Shhh! It's our secret.
-        </p>
-        <p>
-          After my jaunt in the land of chocolate and waffles, I hopped on over the pond to study philosophy in the mountains of Colorado. I spent way too much time philosophizing about droids in Star Wars, questioning who actually comes out the other end of a Transporter, and discussing whether or not we inhabit a simulated universe. Maybe? Who am I to say? Probably...
+          After my jaunt in the land of chocolate and waffles, I hopped on over
+          the pond to study philosophy in the mountains of Colorado. I spent way
+          too much time philosophizing about droids in Star Wars, questioning
+          who actually comes out the other end of a Transporter, and discussing
+          whether or not we inhabit a simulated universe. Maybe? Who am I to
+          say? Probably...
         </p>
         <figure class="stack">
-          <img src="/images/about/colorado.jpg" alt="A Welcome To Colorado sign in the foreground -- brow with white text. In the background there are rolling hills of varying sizes with a mix of terrain -- dry grass to stone. Deep green pines cover the landscape as well." class="box">
+          <img
+            src="/images/about/colorado.jpg"
+            alt="A Welcome To Colorado sign in the foreground -- brow with white text. In the background there are rolling hills of varying sizes with a mix of terrain -- dry grass to stone. Deep green pines cover the landscape as well."
+            class="box"
+          />
           <figcaption class="small-text">
-            There has to be trout somewhere there. <a href="https://www.9news.com/article/news/local/next/this-guy-has-visited-all-of-the-welcome-to-colorful-colorado-signs-and-has-photos-to-prove-it/73-584119335" class="link link-small">Link</a>
+            There has to be trout somewhere there. <a
+              href="https://www.9news.com/article/news/local/next/this-guy-has-visited-all-of-the-welcome-to-colorful-colorado-signs-and-has-photos-to-prove-it/73-584119335"
+              class="link link-small">Link</a
+            >
           </figcaption>
         </figure>
         <p>
-          A little while later, wide-eyed and full of courage, I ended up in Silicon Valley (somehow) making a living slinging tools & building bicycles for all sorts of interesting folks. 
+          A little while later, wide-eyed and full of courage, I ended up in
+          Silicon Valley (somehow) making a living slinging tools & building
+          bicycles for all sorts of interesting folks.
         </p>
         <p>
-          During all that time, though, I always had the itch to be doing more with the stuff I make. How could I make someone's day a little bit easier or better? WHat positive things could I accomplish in the world? Wow. Real heady stuff there, eh.
+          During all that time, though, I always had the itch to be doing more
+          with the stuff I make. How could I make someone's day a little bit
+          easier or better? What positive things could I accomplish in the
+          world? Wow. Real heady stuff there, eh.
         </p>
         <p>
-          Oh, did I mention I also ended up in Orange County, California? No? Well, I did. Weird, huh?
+          Oh, did I mention I also ended up in Orange County, California? No?
+          Well, I did. Weird, huh?
         </p>
         <p>
-          There I kept exploring what the huge world of design and development had to offer and how I could be a part of it in a positive way.
+          There I kept exploring what the huge world of design and development
+          had to offer and how I could be a part of it in a positive way.
         </p>
         <p>
-          Fast forward some years and a trek back to Colorado where I've been helping cultivate ideas into products ever since. I've worked with startups define and develop their products and get them to market quickly. Plus, I've also worked with some well established companies too. Like helping Harvard Business Review design and implement their flagship mobile app. How neat is that?
+          Fast forward some years and a trek back to Colorado where I've been
+          helping cultivate ideas into products ever since. I've worked with
+          startups define and develop their products and get them to market
+          quickly. Plus, I've also worked with some well established companies
+          too. Like helping Harvard Business Review design and implement their
+          flagship mobile app. How neat is that?
         </p>
         <p>
-          When I'm not digitally hammering nails into digital wood to make digital boxes, you can find me hanging out with my wife & our kitty-cat (Stitch), losing most tabletop games to them (yes, even my cat), enjoying the meditation of perfecting my pourover technique, flicking & losing too many flies fishing for trout, making noise with my bass (not fish), and answering various weather-related questions about my height or how my non-existent pro basketball career went.
+          When I'm not digitally hammering nails into digital wood to make
+          digital boxes, you can find me hanging out with my wife & our
+          kitty-cat (Stitch), losing most tabletop games to them (yes, even my
+          cat), enjoying the meditation of perfecting my pourover technique,
+          flicking & losing too many flies fishing for trout, making noise with
+          my bass (not fish), and answering various weather-related questions
+          about my height or how my non-existent pro basketball career went.
         </p>
-        <p>
-          Whew! That's a lot. What would Dale Cooper say?
-        </p>
+        <p>Whew! That's a lot. What would Dale Cooper say?</p>
         <figure class="stack">
-          <img src="/images/about/dale-cooper.png" alt="Special Agent Dale Cooper, from the TV show Twin Peaks, giving a thumbs up in a light brown trenchcoat. He has a disarmingly welcoming smile." class="box">
-          <figcaption class="small-text">
-            Dale Cooper approved.
-          </figcaption>
+          <img
+            src="/images/about/dale-cooper.png"
+            alt="Special Agent Dale Cooper, from the TV show Twin Peaks, giving a thumbs up in a light brown trenchcoat. He has a disarmingly welcoming smile."
+            class="box"
+          />
+          <figcaption class="small-text">Dale Cooper approved.</figcaption>
         </figure>
         <p>Well, that settles that.</p>
         <p>
-          Thanks for reading this far and learning a little (a lot) about me! I really do appreciate it. Don't be a stranger and send me a <a href="mailto:novakdr23@gmail.com" class="link" style="--hover-bg-color: var(--color-dark);--hover-text-color: var(--color-light); --hover-decoration: var(--color-dark);">digital snail mail</a>.
+          Thanks for reading this far and learning a little (a lot) about me! I
+          really do appreciate it. Don't be a stranger and send me a <a
+            href="mailto:novakdr23@gmail.com"
+            class="link"
+            style="--hover-bg-color: var(--color-dark);--hover-text-color: var(--color-light); --hover-decoration: var(--color-dark);"
+            >digital snail mail</a
+          >.
         </p>
       </div>
+    </article>
   </section>
 </Layout>

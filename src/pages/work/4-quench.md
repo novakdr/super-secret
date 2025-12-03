@@ -4,7 +4,7 @@ title: 'Culligan Quench Inventory Management App'
 workImages: [
   {url: "/images/work/quench/quench-wireframes.png", description: "Wireframes"}, 
   {url: "/images/work/quench/quench-mockup.png", description: "High fidelity elements"}, 
-  {url: "/images/work/quench/quench-mockup-1.png", description: "High fidelity elements"},
+  {url: "/images/work/quench/quench-mockup-1.png", description: "Even more mockups"},
 ]
 skills: [ "Product Design", "Frontend Development", "React", "NextJS"]
 ---

@@ -6,7 +6,7 @@ workImages: [
   {url: "/images/work/lxd/lxd-mockup-2.png", description: "Second logo iteration"}, 
   {url: "/images/work/lxd/lxd-mockup-3.png", description: "Third logo iteration"},
   {url: "/images/work/lxd/mockup-lxd.png", description: "Website update"},
-  {url: "/images/work/lxd/mockup-lxd-mobile.png", description: "Responsive view"}
+  {url: "/images/work/lxd/mockup-lxd-mobile.png", description: "Mobile view"}
 ]
 skills: [ "Frontend Development", "Logo Design", "Tailwind", "Ruby on Rails"]
 ---

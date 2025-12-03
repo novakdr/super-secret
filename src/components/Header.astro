@@ -1,10 +1,17 @@
 ---
-const { title, subTitle, link, linkName } =  Astro.props;
+const { title, subTitle, link, linkName } = Astro.props;
 ---
+
 <div class="page-header stack" style="--space: var(--space-m);">
   <div class="header-container">
-    <h1>{ title }</h1>
-    { link && <a href={ link } class="link">{linkName}</a> }
+    <h1>{title}</h1>
+    {
+      link && (
+        <a href={link} class="link">
+          {linkName}
+        </a>
+      )
+    }
   </div>
-  { subTitle && <p class="sub-text">{subTitle}</p> }
+  {subTitle && <p class="sub-text">{subTitle}</p>}
 </div>

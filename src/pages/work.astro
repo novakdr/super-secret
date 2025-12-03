@@ -1,20 +1,33 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import PageHeading from '../components/PageHeading.astro';
-import Navigation from '../components/Navigation.astro';
-import Header from '../components/Header.astro';
-import WorkSection from '../components/WorkSection.astro';
+import Layout from "../layouts/Layout.astro";
+import PageHeading from "../components/PageHeading.astro";
+import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
+import WorkSection from "../components/WorkSection.astro";
 ---
 
-<Layout pageTitle="Work | Dave Novak" hasFooter >
-	<PageHeading imageLight="/images/work/work-heading-light.svg" imageDark="/images/work/work-heading-dark.svg" />
-	<section class="container">
-		<Navigation eyeColor="var(--color-accent-2)" addMarginEnd="--margin-end: var(--space-2xl);" hasHome />
-		<article class="stack">
-			<Header title="Work" subTitle="* Process and project case studies available upon request" link="/images/pdf/DavidNovakResume.pdf" linkName="Resume"/>
-			<section class="stack" style="--space: 0;">
-				<WorkSection />
-			</section>
-		<article/>
-	</section>
+<Layout pageTitle="Work | Dave Novak" hasFooter>
+  <PageHeading
+    imageLight="/images/work/work-heading-light.svg"
+    imageDark="/images/work/work-heading-dark.svg"
+  />
+  <section class="container">
+    <Navigation
+      eyeColor="var(--color-accent-2)"
+      addMarginEnd="--margin-end: var(--space-2xl);"
+      hasHome
+    />
+    <article class="stack">
+      <Header
+        title="Work"
+        subTitle="* Process and project case studies available upon request"
+        link="/images/pdf/David-Novak-Resume.pdf"
+        linkName="Resume"
+      />
+      <section class="stack" style="--space: 0;">
+        <WorkSection />
+      </section>
+      <article></article>
+    </article>
+  </section>
 </Layout>

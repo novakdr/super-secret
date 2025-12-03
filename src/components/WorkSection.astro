@@ -2,11 +2,11 @@
 const allPosts = Object.values(import.meta.glob('../pages/work/*.md', { eager: true }));
 ---
 
-{allPosts.map((post: any) => 
+{allPosts.map((post: any) =>
     <a href={post.url} class="link-work">
       <p class="work-title">{post.frontmatter.title}</p>
       <span class="work-tags">
-        {post.frontmatter.skills.map((skill: any) => 
+        {post.frontmatter.skills.map((skill: any) =>
           <p class="small-text">{skill}</p>
           <p class="small-text">/</p>
         )}
